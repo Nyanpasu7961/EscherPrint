@@ -34,7 +34,7 @@ def escher_print(image, rot = 20, offset = (0, 0), translate = (50, 20)):
     arr_image = img_as_float(image)
 
     h, w = arr_image.shape[:2]
-    center = (h // 2, w // 2)
+    center = (w // 2, h// 2)
 
     M = h / np.log(h)
 

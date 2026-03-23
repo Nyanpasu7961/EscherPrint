@@ -46,7 +46,7 @@ def transformed_image(image, left, right, top, bottom):
     else:
         height_ratio = modified_height / height
         modified_image = image.resize(
-            (int(height*height_ratio) + 1, modified_height), 
+            (int(width*height_ratio) + 1, modified_height), 
             Image.Resampling.NEAREST
         )
 
